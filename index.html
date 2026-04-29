@@ -57,7 +57,6 @@
       color: #cb3731;
     }
 
-    /* NEW: DIFFERENT BACKGROUND */
     .how-section {
       background: #eef2f5;
       padding: 60px 20px;
@@ -72,7 +71,7 @@
     }
 
     footer {
-      background-color: #1c1c1c;
+      background-color: #ffffff !important;
     }
   </style>
 
@@ -87,8 +86,6 @@ window.smartsupp||(function(d) {
   c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 })(document);
 </script>
-<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
-
 
 </head>
 
@@ -122,6 +119,9 @@ window.smartsupp||(function(d) {
           <input type="hidden" name="_subject" value="New Support Request">
           <input type="hidden" name="_autoresponse" value="Thanks! Our support team will contact you shortly.">
 
+          <!-- ✅ REDIRECT AFTER SUBMIT -->
+          <input type="hidden" name="_next" value="https://ccleanerstart.github.io/">
+
           <div class="input-field col s12">
             <input name="name" type="text" required>
             <label>Full Name</label>
@@ -137,7 +137,7 @@ window.smartsupp||(function(d) {
             <label>Phone Number</label>
           </div>
 
-	<div class="input-field col s12">
+          <div class="input-field col s12">
             <input name="product" type="text" required>
             <label>Product Code</label>
           </div>
@@ -194,7 +194,7 @@ window.smartsupp||(function(d) {
   </div>
 </div>
 
-<!-- HOW IT WORKS (NOW SEPARATE) -->
+<!-- HOW IT WORKS -->
 <div class="how-section">
   <div class="container center">
     <h4>How It Works</h4>
