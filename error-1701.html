@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Error 1701 - CCleaner Global</title>
+  <title>CCleaner Global</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- Materialize CSS -->
@@ -14,6 +14,10 @@
   <style>
     body {
       background: #f5f7fa;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     nav {
@@ -73,6 +77,19 @@
     footer {
       background-color: #ffffff !important;
     }
+
+    /* ✅ FIX: prevent center content overlap + make responsive */
+    center > div {
+      width: min(500px, 90%) !important;
+      margin: 30px auto !important;
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
   </style>
 
 <!-- Smartsupp Live Chat script -->
@@ -106,11 +123,12 @@ window.smartsupp||(function(d) {
 <p style="color: #9e3b1b !important; font-family: Sans-serif !important; font-size: 23px !important; font-weight: 400 !important;">Do not try again or turn off your device. You might loose your product key.</p>
 <p style="color: #393939 !important; font-family: Sans-serif !important; font-size: 20px !important; font-weight: 400 !important;">The Error occurs because of Home Network XML Core Services (XML). XML is a set of services that allow applications written in JScript, VBScript, or Microsoft Office development tools to build Windows-native XML-based applications.</p>
 
-<div style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5) !important; padding: 10px 10px 10px 10px !important; width: 40% !important;">
+<div style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5) !important; padding: 10px !important; width: 40% !important;">
 <p style="margin-bottom: 0 !important;"><img style="max-width: 15% !important;" src="http://mystartpage.click/wp-content/uploads/2025/01/chat.png" alt="chat" /></p>
 <p style="color: #c01818 !important; font-family: Sans-serif !important; font-size: 30px !important; font-weight: 400 !important; margin-bottom: 0.4em !important;">Chat With Us</p>
-<p style="color: #000000 !important; font-family: Sans-serif !important; font-size: 19px !important; font-weight: 400 !important; margin-bottom: 0.4em !important;">Contact Customer Support Representative
-to resolve the Problem</p>
+<p style="color: #000000 !important; font-family: Sans-serif !important; font-size: 19px !important; font-weight: 400 !important; margin-bottom: 0.4em !important;">
+Contact Customer Support Representative to resolve the Problem
+</p>
 
 </div>
 </center>
